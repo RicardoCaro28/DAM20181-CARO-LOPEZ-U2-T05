@@ -1,0 +1,22 @@
+<!--
+  Generated template for the GeneroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Genero</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+<my-component *ngIf="hombre"></my-component>
+<my-component-dos *ngIf="!hombre"></my-component-dos>
+
+<button ion-button (click)="goBack()">regresar</button>
+</ion-content>
